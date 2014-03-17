@@ -1,0 +1,57 @@
+@import "bg";
+@mixin btn() {
+	background: #1dd2af;
+	padding: 7px 12px;;
+	border-style:none;
+	color:white;
+}
+
+@mixin base($ico) {
+	background: url("../images/big-icons.png") no-repeat;
+	height:126px;
+	@include transition(0.6s);
+	@if ($ico == cruise) {
+		background-position: 20px -125.8px;
+
+	}
+	@if ($ico == breaks) {
+		background-position: -136px -126px;
+	}
+	@if ($ico == honeymoon) {
+		background-position: -290px -126px;
+	}
+	@if ($ico == adventure) {
+		background-position: -445px -126px;
+	}
+	@if ($ico == safari) {
+		background-position: -600px -126px;
+	}
+	@if ($ico == beach) {
+		background-position: -758px -126px;
+	}
+	
+}
+
+@mixin client() {
+	 
+	border: { 
+		top: 5px solid #1DD2AF;
+		left:1px solid #DDDDDD;
+		right:1px solid #DDDDDD;
+		bottom:1px solid #DDDDDD;
+	}
+	padding:20px;
+	background:#EEEEEE;
+	margin-top:25px;
+	h3 {
+		color:#1DD2AF;
+		span {
+			font: {
+				size:small;
+
+			}
+			color: #626262 !important;	
+		}
+	}
+}
+ 

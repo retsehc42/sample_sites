@@ -1,0 +1,169 @@
+.front-page { 
+	h1 {
+			text-align:center;
+			color:#2c3e50;
+			padding: {
+				bottom:55px;
+			}
+			span {
+				font: {
+					size:medium !important;
+					weight:normal !important;
+				}
+				color:#626262;
+			}
+		}
+	#search-holy {
+		background:#2C3E50;
+		color:#9fb0c0;
+
+		label {
+			font: {
+				size:large;
+				weight:normal;
+			}
+			margin:17px 0;
+		}
+		input {
+			margin:12px 0;
+		}
+		button {
+			@include btn();
+			margin:12px 0;
+		}
+		.holy_search {
+			border: {
+				right:1px solid #36485a;
+			}
+			font: {
+				size:large;
+			}
+			 
+			span {
+				font: {
+					size:x-large;
+					weight:bold;
+				}
+				color:white !important;
+			}
+			i {
+				position:relative;
+				z-index:1;
+				left:8px;
+				top:-6px;
+				color:#2c3e50;
+				@include text-shadow(1px 0px #36485a);
+			}
+		}
+	}
+	#special_offers {
+		padding:70px 0;
+		@include clearfix();
+		.special_holder {
+			background:#eeeeee;
+			padding:22px 0;
+			.desc {
+				margin: 0 21px;
+			}
+			img {
+				margin: 0 auto;
+			}
+			p {
+				line-height:25px;
+				margin:0;
+			 
+				padding:5px;
+			}
+			i {
+				margin: {
+					right:8px;
+				}
+			}
+			@include transition(0.5s);
+		}
+		.special_holder:hover {
+			background: #1dd2af;
+			p {
+				background:#2c3e50;
+				color:white;
+
+			}
+			span {
+				color:#8899a8;
+			}
+		 
+		}
+	}
+	#holiday_type {
+		background: url("../images/type-bg.jpg") no-repeat top center;
+		padding:70px 0;
+		h1 {
+			color:white !important;
+		}
+		span {
+			color:#9FB0C0;
+		}
+		p {
+			text-align:center;
+			color:#9FB0C0;
+			margin:0;
+			padding:15px;
+			font: {
+				size:large;
+			}
+		}
+		.type-holder {
+			padding: {
+				bottom:30px;
+			}
+		}
+		.cruise {
+			@include base(cruise);
+		}
+		.cruise:hover {
+			 background-position: 20px 2.3px;
+		}
+		.breaks {
+			@include base(breaks);
+		}
+		.breaks:hover {
+			background-position: -136px 2.2px;
+		}
+		.honeymoon {
+			@include base(honeymoon);
+		}
+		.honeymoon:hover {
+			background-position: -290px 2.2px;
+		}
+		.adventure {
+			@include base(adventure);
+		}
+		.adventure:hover {
+			background-position: -445px 2.2px;
+		}
+		.safari {
+			@include base(safari);
+		}
+		.safari:hover {
+			background-position: -600px 2.2px;
+		}
+		.beach {
+			@include base(beach);
+		}
+		.beach:hover {
+			background-position: -758px 2.2px;
+		}
+	}
+	#happy_clients {
+		@include clearfix;
+		padding: {
+			top:70px;
+			bottom:130px;
+		}
+
+		article {
+			@include client();
+		}
+	}
+	@import "more_footer";
+}

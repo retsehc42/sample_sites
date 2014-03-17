@@ -1,0 +1,23 @@
+#page_nav {
+	ul.dropdown {
+		 @include opacity(1);
+		background: rgba( #2C3E50, 1 ); 
+		list-style-type:none;
+		margin:0 !important;
+		color:white;
+		padding:10px !important;
+		position:absolute;
+		z-index:1;
+		left:16px;
+		li {
+			line-height:30px;
+			a {
+				color:white;
+			}
+			a:hover {
+				color:#1dd2af !important;
+			}
+		}
+	}
+
+}

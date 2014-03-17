@@ -1,0 +1,97 @@
+#more_footer {
+	background:#2C3E50;
+	border: {
+		bottom: 1px solid rgba(white,0.1);
+	}
+	p {
+			font: {
+				weight:bold;
+			}
+			color:white;
+		}
+	padding: {
+		bottom:20px;
+	}
+	h3 {
+		font: {
+			weight:bold;
+		}
+		color: #1DD2AF;
+		margin:22px 0;
+	}
+	.newsletter {
+		@include clearfix();
+		form {
+			@include clearfix();
+			margin: 25px 0;
+		}
+		input {
+			width:78% !important;
+			@include border-radius(5px !important);
+			margin-right: 5px;
+		}
+		button {
+			width:20% !important;
+
+			padding:7px !important;
+			@include btn();
+			@include border-radius(5px !important);
+		}
+	}
+	.latest_news {
+		.wrap_news {
+			@include clearfix();
+			margin-bottom: 15px;
+		}
+		.wrap_img {
+			background:none;
+			display:inline-block;
+			width:13%;
+			padding:3px;
+			@include border-radius(3px);
+			border: 1px solid white;
+		}
+		.wrap_desc {
+			display:inline-block;
+			width:78%;
+			span {
+				padding: 7px 0 !important;
+				font: {
+					weight:normal !important;
+					size:small !important;
+				}
+				color:#1BB194;
+			}
+		}
+	}
+	.tags {
+		@include clearfix();
+		a {
+			padding:7px 13px;
+			background:none;
+			border: 1px solid white;
+			color:white;
+			@include border-radius(3px);
+			float:left;
+			margin: {
+				right:5px;
+				bottom:5px;
+			}
+		}
+	}
+	.address {
+		@include clearfix();
+		line-height:30px;
+		span {
+			color:#1BB194;
+		}
+		font: {
+			size:medium;
+		}
+		color:white;
+		i {
+			width:25px;
+			color:white;
+		}
+	}
+}

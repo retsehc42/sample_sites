@@ -1,0 +1,25 @@
+#page_footer {
+	padding: {
+		top: 50px;
+
+	}
+	background:#2C3E50;
+	.arrow {
+		text-align:center;
+		span {
+			 
+		 	color: #1DD2AF;
+		 	cursor:pointer;
+		 	position:relative;
+		 	z-index:1;
+		 	top:55px;
+		}
+		.fa {
+			line-height:0 !important;
+		}
+		.fa-caret-up {
+			font-size:200px !important;
+		}
+	}
+	@import "footer_info";
+}
